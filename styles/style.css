@@ -13,7 +13,9 @@
     display: flex;
     position: relative;
     align-items: center;
-    height: 756px;
+    height: 100vh;
+    max-height: 600px;
+    max-height: 756px;
     /* выше установили ограничения для секции */
     background-color: #f2f2f2;
 }
@@ -25,7 +27,7 @@
     z-index: 2;
 }
 
-.logo__place_header {
+.logo_place_header {
     position: absolute;
     top: 30px;
     left: 64px;
@@ -57,6 +59,10 @@
 .header__link {
     color: #2f80ed;
     text-decoration: none;
+}
+
+.header__link:hover {
+    color: blue;
 }
 
 
@@ -108,7 +114,7 @@
 
 .two-columns__paragraph {
     margin-top: 0px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 34px;
     font-weight: normal;
@@ -124,6 +130,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -132,6 +139,7 @@
     align-self: center;
     justify-content: center;
     width: 60%;
+    margin-top: 0px;
     margin-bottom: 20px;
     line-height: 1.15;
     font-size: 60px;
@@ -157,6 +165,9 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     width: 1100px;
 }
 
@@ -228,6 +239,10 @@
     font-weight: normal;
 }
 
+.feynman__link:hover {
+    color: blue;
+}
+
 .feynman__image {
     position: absolute;
     left: 0px;
@@ -256,6 +271,8 @@
     height: 877px;
     top: 0px;
     right: -210px;
+    background-size: 100% 100%;
+    z-index: 0;
 }
 
 .section-title_theme_dark {
@@ -264,6 +281,7 @@
     line-height: 1.15;
     font-size: 60px;
     font-weight: bold;
+    z-index: 1;
 }
 
 .section-subtitle_theme_dark {
@@ -272,6 +290,7 @@
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
+    z-index: 1;
 }
 
 
@@ -318,7 +337,7 @@
     justify-content: space-between;
 }
 
-.logo__place_footer {
+.logo_place_footer {
     background-image: url('../images/logo_place_footer.svg');
 }
 
@@ -352,17 +371,14 @@
     text-decoration: none;
 }
 
+.footer__column-link:hover {
+    color: blue;
+}
+
 .footer__social-icon {
     color: white;
     text-decoration: none;
-}
-
-a img {
     height: 16px;
     width: 16px;
     margin-right: 10px;
-}
-
-a:hover {
-    color: blue;
 }
