@@ -4,5 +4,8 @@
 }
 
 .header__link:hover {
-    color: blue;
+    color: #2f80ed;
+    opacity: .3;
+    transition: .5s;
+    opacity: 0.5;
 }

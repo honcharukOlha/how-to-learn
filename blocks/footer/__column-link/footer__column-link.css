@@ -7,5 +7,6 @@
 }
 
 .footer__column-link:hover {
-    color: blue;
+    transition: .5s;
+    opacity: 0.5;
 }
