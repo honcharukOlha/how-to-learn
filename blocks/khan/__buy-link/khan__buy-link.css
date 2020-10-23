@@ -11,6 +11,6 @@
 }
 
 .khan__buy-link:hover {
-    transition: .5s;
-    opacity: 0.5;
+    opacity: .3;
+    transition: opacity 2s linear .3s;
 }

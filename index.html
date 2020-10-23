@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="pages/index.css">
-    <link rel="stylesheet" href="rotation/rotation.css">
     <meta name="author" content="Ольга Гончарук">
     <title>Научиться учиться</title>
 </head>
@@ -20,7 +18,7 @@
                 <a href="#" class="header__link"> Узнать&rarr;</a>
             </p>
             <img alt="Опять_двойка" src="./images/header-image.png" class="header__main-illustration">
-            <div class="header__square-pic"></div>
+            <div class="header__square-pic rotation"></div>
         </header>
 
         <main class="content">
@@ -76,16 +74,16 @@
                 <h2 class="section-title" lang="ru/en">Видео на TED</h2>
                 <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
 
-                <div class="video__iframes ">
-                    <div class="video__iframe ">
-                        <iframe width="515 " height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen>
+                <ul class="video__iframes">
+                    <li>
+                        <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen>
                     </iframe>
-                    </div>
-                    <div class="video__iframe">
-                        <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen>
+                    </li>
+                    <li>
+                        <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen>
                         </iframe>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </section>
 
             <section class="oakley">
@@ -209,7 +207,7 @@
                     </li>
                 </ul>
 
-                <div class="kaufman__triangle ">
+                <div class="kaufman__triangle rotation">
 
                 </div>
             </section>
@@ -217,12 +215,20 @@
             <section class="resources ">
                 <h2 class="section-title ">Полезные ресурсы</h2>
                 <p class="section-subtitle ">Больше материалов о техниках и лайфхаках обучения</p>
-                <div class="resources__logo-zone ">
-                    <img class="resources__logo" alt="Арзама" src="images_sprint-2/logo/resources-arzamas.svg">
-                    <img class="resources__logo" alt="Н+1" src="images_sprint-2/logo/resources-n1.svg">
-                    <img class="resources__logo" alt="Стрелка" src="images_sprint-2/logo/resources-strelka.svg">
-                    <img class="resources__logo" alt="Полка" src="images_sprint-2/logo/resources-polka.svg">
-                </div>
+                <ul class="resources__logo-zone">
+                    <li>
+                        <a href="#" class="resources__logo"><img alt="Арзама" src="images_sprint-2/logo/resources-arzamas.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="resources__logo"><img alt="Н+1" src="images_sprint-2/logo/resources-n1.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="resources__logo"><img alt="Стрелка" src="images_sprint-2/logo/resources-strelka.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="resources__logo"><img alt="Полка" src="images_sprint-2/logo/resources-polka.svg"></a>
+                    </li>
+                </ul>
             </section>
         </main>
 
@@ -235,9 +241,15 @@
                 <nav class="footer__column footer__column_content_info ">
                     <h3 class="footer__column-heading ">О Практикуме</h3>
                     <ul class="footer__column-links ">
-                        <li><a class="footer__column-link " href="# ">Главная</a></li>
-                        <li><a class="footer__column-link " href="# ">Концепция</a></li>
-                        <li><a class="footer__column-link " href="# ">Наставники</a></li>
+                        <li>
+                            <a class="footer__column-link " href="# ">Главная</a>
+                        </li>
+                        <li>
+                            <a class="footer__column-link " href="# ">Концепция</a>
+                        </li>
+                        <li>
+                            <a class="footer__column-link " href="# ">Наставники</a>
+                        </li>
                     </ul>
                 </nav>
 
