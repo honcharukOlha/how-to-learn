@@ -4,9 +4,9 @@
     margin: 0px;
     padding: 0px;
     list-style-type: none;
+    transition: opacity .5s linear .1s;
 }
 
 .resources__logo:hover {
     opacity: .3;
-    transition: opacity .5s linear .1s;
 }
